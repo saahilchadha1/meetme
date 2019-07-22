@@ -623,13 +623,13 @@
 				// Calculate x, y.
 					if (breakpoints.active('<=small')) {
 
-						x = $target.offset().top - (Math.max(0, $window.height() - $target.outerHeight()) / 2);
+						x = $target.offset().top - (Math.max(0, $target.outerHeight()));
 						y = { scrollTop: x };
 
 					}
 					else {
 
-						x = $target.offset().left - (Math.max(0, $window.width() - $target.outerWidth()) / 2);
+						x = $target.offset().left - (Math.max(0, $target.outerWidth()));
 						y = { scrollLeft: x };
 
 					}
